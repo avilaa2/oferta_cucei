@@ -17,8 +17,7 @@
        
     else
     {
-        echo 'ad';
-        switch($rol)
+       switch($rol)
         {
             case 'coordinador computacion':
                 $carrera_1 = 'COM';
@@ -26,15 +25,11 @@
             break;
             case 'coordinador informatica':
                 $carrera_1 = 'INNI';
-                $carrera_2 = 'INCO';
-            break;
-            case 'coordinador robotica':
-                $carrera_1 = 'COM';
-                $carrera_2 = 'INCO';
+                $carrera_2 = 'INF';
             break;
             case 'coordinador biomedica':
-                $carrera_1 = 'COM';
-                $carrera_2 = 'INCO';
+                $carrera_1 = 'BIM';
+                $carrera_2 = 'INBI';
             break;
         }
 

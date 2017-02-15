@@ -21,8 +21,8 @@
     //print_r($array);
     //print_r($ini);
 
-    echo '<table>';
-    echo '<tr><thead><th>INI</th><th>L</th><th>M</th><th>I</th><th>J</th><th>V</th><th>S</th></tr></thead><tbody>';
+    echo '<table class="table-bordered">';
+    echo '<thead><tr><th id="init"> Inicio </th><th>Lunes</th><th>Martes</th><th>Miercoles</th><th>Jueves</th><th>Viernes</th><th>Sabado</th></tr></thead><tbody>';
 
     foreach ($ini as $i) {
         echo '<tr><td>' . $i . '</td>';

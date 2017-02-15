@@ -43,18 +43,27 @@
 	<head>
 	<title>Oferta</title>
 	</head>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/login.css">
 	<body>
-		<h1>Oferta CUCEI</h1>
-		<h2>Login</h2>
-		<form method="POST">
-		<?php if(isset($fmsg)){ echo $fmsg . '<br>'; } ?>
-		  Usuario:<br>
-		  <input type="text" name="user" required><br>
-		  Password:<br>
-		  <input type="password" name="pass" required><br><br>
-		  <input type="submit" value="Enviar">
-		</form>
+		<div class="main_container">
+			<div class="wrapper">
+				<h1 class="text-center">Oferta CUCEI</h1>
+				<h2 class="text-center">Login</h2>
+				<form method="POST">
+				<?php if(isset($fmsg)){ echo $fmsg . '<br>'; } ?>
+				  Usuario:<br>
+				  <input type="text" name="user" required><br>
+				  Password:<br>
+				  <input type="password" name="pass" required><br><br>
+				  <input type="submit" value="Enviar" class="btn btn-success">
+				</form>
+			</div>
+		</div>
 		
+		<script src="js/jquery-3.1.1.js"></script>
+		<script src="js/bootstrap.min.js"></script>
 	</body>
 	</html>
 

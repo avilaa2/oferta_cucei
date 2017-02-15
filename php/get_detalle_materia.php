@@ -18,7 +18,7 @@
         $array[] = $row;
     }
 
-    echo "<table>";
+    echo "<table class='table-bordered'>";
     $first_row = true;
     foreach ($array as $reg)
     {

@@ -18,7 +18,7 @@
     if(count($array) > 0)
     {
     	echo 'Total: ' . count($array);
-    	echo "<table>";
+    	echo "<table class='table-bordered'>";
     	$first_row = true;
     	foreach ($array as $reg)
 	    {

@@ -6,35 +6,39 @@
 ?>
 <!DOCTYPE html>
 <head>
-	<style>
-		table, th, td {border: 1px solid black;}
-		/* Colores por carrera */
-		.COM {background-color:  lightseagreen;}
-		.INCO {background-color:  dodgerblue;}
-		.INF {}
-		.INNI {}
-		.BIM {}
-		.INBI {}
-	</style>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-	<script src="js/materias.js"></script>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/login.css">
 	
-	<title></title>
+	<title>Materias</title>
 </head>
 <body>
-	<?php echo $_SESSION['user'] . ' (' . $_SESSION['rol'] . ')'; ?>
-	<h1>Oferta CUCEI</h1>
-	<h2>Ver detalle de materias</h2>
-	<select name = "cal">
-		<option value='2017a' selected>2017A</option>
-	</select>
+	<?php include_once 'layouts/navbar.php'; ?>
+	
+	<section id="stand">
+		<h2 class="text-center">Ver detalle de materias</h2>
+		<div class="container">
+			<div class="row return">
+				<a href="index.php"> <i class="fa fa-reply" aria-hidden="true"></i> Regresar</a>
+				<a href="login.php"> <i class="fa fa-sign-out" aria-hidden="true"></i> Salir</a>
+			</div>
+			<div class="row">
+				<select name = "cal">
+					<option value='2017a' selected>2017A</option>
+				</select>
 
-	<select name = "materias"></select>
-	<button id="actualizar">Actualizar</button>
+				<select name = "materias"></select>
+				<button id="actualizar">Actualizar</button>
 
-	<pre id = "detalle"></pre>
-	<pre id = "nrc"></pre>
-	<a href="index.php">Regresar</a><br>
-	<a href="login.php">Salir</a>
+				<pre id = "detalle"></pre>
+				<pre id = "nrc"></pre>
+			</div>	
+		</div>
+	</section>
+	
+	<script src="js/jquery-3.1.1.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/materias.js"></script>
+
 </body>
 </html>

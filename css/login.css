@@ -1,0 +1,75 @@
+body, html{
+	margin: 0;
+	padding: 0;
+	background: #f1f1f1;
+}
+.main_container{
+	height: 100vh;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: flex;
+}
+.wrapper{
+	margin: auto;
+	padding: 10px;
+}
+.wrapper form input{
+	height: 30px;
+	width: 100%;
+	padding-left: 3px;
+}
+.wrapper form input[type='submit']{
+	background: #4CAF50;
+	cursor: pointer;
+	color: #fff;
+}
+#resumen{
+	padding: 10px;
+}
+#resumen .jumbotron h2{
+	border-bottom: 1px solid red;
+	padding-bottom: 5px;
+}
+#resumen .jumbotron .panel_main{
+	margin-top: 40px;
+}
+.return{
+	padding-bottom: 10px;
+}
+.return a{
+	display: inline-block;
+	border: 1px solid #c9c9c9;
+	padding: 5px 15px;
+	text-decoration: none;
+}
+.return a:hover{
+	transition: 0.2s ease-in all;
+	background: #4CAF50;
+	border: 1px solid #fff;
+}
+.dup {
+	color: red
+}
+.table-bordered tr th{
+	text-align: center;
+	background: #0099ff;
+	width: 150px;
+}
+.table-bordered>tbody>tr>td:not(:first-child){
+	width: 180px;
+	font-size: 13px;	
+}
+#init{
+	width: 80px;
+	font-size: 13px;
+}
+
+/* Colores por carrera */
+.COM {background-color:  lightseagreen;}
+.INCO {background-color:  dodgerblue;}
+.INF {}
+.INNI {background-color:  skyblue}
+.BIM {}
+.INBI {background-color:  slateblue}
